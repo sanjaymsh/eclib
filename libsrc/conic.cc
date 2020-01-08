@@ -25,12 +25,12 @@
 #include <eclib/conic.h>
 #include <eclib/legendre.h>
 
-//#define DEBUG_CONIC
-//#define DEBUG_CONIC_2
+#define DEBUG_CONIC
+#define DEBUG_CONIC_2
 #ifndef TRACE_FACTORIZATION
 #define TRACE_FACTORIZATION 0
 #endif
-//#define DEBUG_REDUCE
+#define DEBUG_REDUCE
 #define REDUCE_INTERMEDIATES // reduces intermediate solutions
 //#define MORDELL_REDUCE // else use JC's (faster!) reduction via quadratics
 

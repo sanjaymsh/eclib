@@ -27,13 +27,13 @@
 #include <eclib/legendre.h>
 #include <eclib/illl.h>
 
-//#define DEBUG_MINV
-//#define DEBUG_LEM1
-//#define WATCH_REDUCTION  
-//#define DEBUG_LEGENDRE
+#define DEBUG_MINV
+#define DEBUG_LEM1
+#define WATCH_REDUCTION  
+#define DEBUG_LEGENDRE
 //#define DEBUG_LEGENDRE_PARAM
-//#define CHECK_ALL
-//#define DEBUG_LLL
+#define CHECK_ALL
+#define DEBUG_LLL
 //#define MORDELL_REDUCE // else use JC's reduction via quadratics
 #ifndef TRACE_HOLZER
 #define TRACE_HOLZER 0 // =1 for verbose reduction of solutions
@@ -43,7 +43,7 @@
 //#define CHECK_INDEX
 //#define CHECK_CLAIMS
 //#define REDUCE_INTERMEDIATES // reduces intermediate solutions
-//#define HOLZER_MEASURES // shows Holzer measure of solutions before/after reduction
+#define HOLZER_MEASURES // shows Holzer measure of solutions before/after reduction
 
 //#define TL2(nnn) cout<<"Calling lem2() at point "<<nnn<<endl;
 #define TL2(nnn) 
