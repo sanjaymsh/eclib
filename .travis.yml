@@ -17,6 +17,7 @@ matrix:
         arch: ppc64le
       - env: CONFIGURE_OPTS="--disable-mpfp"
         arch: ppc64le
+matrix:
    exclude:
       - os: osx
         arch: ppc64le
