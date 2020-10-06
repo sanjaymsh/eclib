@@ -7,9 +7,20 @@ os:
 osx_image: xcode9.4
 dist: xenial
 
-env:
-    - CONFIGURE_OPTS=""
-    - CONFIGURE_OPTS="--disable-mpfp"
+matrix:
+   include:
+      - env: CONFIGURE_OPTS=""
+        arch: amd64
+      - env: CONFIGURE_OPTS="--disable-mpfp"
+        arch: amd64
+      - env: CONFIGURE_OPTS=""
+        arch: ppc64le
+      - env: CONFIGURE_OPTS="--disable-mpfp"
+        arch: ppc64le
+   exclude:
+      - os: osx
+        arch: ppc64le
+
 
 install:
     - |
